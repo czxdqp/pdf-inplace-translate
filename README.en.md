@@ -107,6 +107,8 @@ python scripts/pdf_translate.py extract input.pdf -o spec.json --lang de \
 python scripts/pdf_translate.py apply spec.json -o output.pdf --title "name-DE"
 ```
 
+`spec.json` stores `source` as a path relative to the spec file (with `source_abs` as a fallback), so the repo works after being cloned to another machine or folder. If the source PDF moved, pass `--source new/path.pdf`.
+
 ### 4. Verify — then actually look
 
 ```bash
@@ -130,7 +132,7 @@ OK: no leftovers, no overflow, no overlap
 | Command | Purpose | Key options |
 |---|---|---|
 | `extract` | PDF → spec.json | `-o`, `--lang`, `--map`, `--pad`, `--merge-gap` |
-| `apply` | spec.json → PDF | `-o`, `--title` (writes PDF metadata) |
+| `apply` | spec.json → PDF | `-o`, `--title` (writes PDF metadata), `--source` (override source PDF) |
 | `verify` | self-check | `--spec` (enables leftover-source detection) |
 | `render` | PDF → PNG | `-d`, `--dpi`, `--prefix` |
 

@@ -1,5 +1,6 @@
 {
- "source": "C:\\Users\\czx\\WorkBuddy\\2026-10-28-22-42-58\\pdf-inplace-translate\\examples\\demo_datasheet.pdf",
+ "source": "demo_datasheet.pdf",
+ "source_abs": "C:\\Users\\czx\\WorkBuddy\\2026-10-28-22-42-58\\pdf-inplace-translate\\examples\\demo_datasheet.pdf",
  "options": {
   "pad": 3.5,
   "min_scale": 0.84,

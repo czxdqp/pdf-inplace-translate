@@ -70,6 +70,8 @@ color / maxw / max_lines`。脚本会：
 python $T apply spec.json -o 输出.pdf --title "文件名-ES"
 ```
 
+`spec.json` 的 `source` 存的是相对 spec 文件的路径，换目录/换机器仍可跑；原文挪走了用 `--source 新路径.pdf` 指定。
+
 ### 4. 自检 + 目检
 
 ```bash

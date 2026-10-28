@@ -110,6 +110,8 @@ python scripts/pdf_translate.py extract 原文.pdf -o spec.json --lang de \
 python scripts/pdf_translate.py apply spec.json -o 输出.pdf --title "文件名-DE"
 ```
 
+`spec.json` 里的 `source` 记录的是**相对 spec 文件**的原文路径（另有 `source_abs` 兜底），所以仓库换台机器、换个目录都能直接跑。原文挪走了就加 `--source 新路径.pdf`。
+
 ### 4. 自检 + 目检
 
 ```bash
@@ -133,7 +135,7 @@ python scripts/pdf_translate.py render 输出.pdf -d png/ --dpi 150
 | 子命令 | 作用 | 关键参数 |
 |---|---|---|
 | `extract` | PDF → spec.json | `-o` 输出、`--lang` 语言标记、`--map` 术语表预填、`--pad` 格内留白、`--merge-gap` 合并阈值 |
-| `apply` | spec.json → PDF | `-o` 输出、`--title` 写入 PDF 标题元数据 |
+| `apply` | spec.json → PDF | `-o` 输出、`--title` 写入 PDF 标题元数据、`--source` 指定原文路径 |
 | `verify` | 自检 | `--spec` 用于检查原文残留 |
 | `render` | PDF → PNG | `-d` 输出目录、`--dpi`、`--prefix` |
 

@@ -255,8 +255,19 @@ def cmd_extract(a):
             "height": round(page.rect.height, 2),
             "blocks": page_blocks(page, a.pad, a.merge_gap),
         })
+    # source 存成相对 spec.json 的路径，仓库/协作场景换机器也能跑；
+    # source_abs 留作兜底（跨盘符时无法求相对路径）
+    spec_dir = os.path.dirname(os.path.abspath(a.out)) or os.getcwd()
+    pdf_abs = os.path.abspath(a.pdf)
+    try:
+        rel = os.path.relpath(pdf_abs, spec_dir)
+        if rel.startswith(".." + os.sep + ".."):
+            rel = pdf_abs
+    except ValueError:
+        rel = pdf_abs
     spec = {
-        "source": os.path.abspath(a.pdf),
+        "source": rel,
+        "source_abs": pdf_abs,
         "options": {"pad": a.pad, "min_scale": a.min_scale, "line_factor": a.line_factor},
         "target_language": a.lang,
         "pages": pages,
@@ -296,9 +307,29 @@ def wrap_text(text, role, size, maxw):
     return [l for l in out if l != ""] or [""]
 
 
+def resolve_source(spec, spec_path, override=None):
+    """定位原文 PDF：--source > spec.source（相对 spec 目录）> spec.source_abs。"""
+    base = os.path.dirname(os.path.abspath(spec_path))
+    cands = []
+    if override:
+        cands.append(override)
+    s = str(spec.get("source") or "")
+    if s:
+        cands.append(s if os.path.isabs(s) else os.path.join(base, s))
+        cands.append(os.path.join(base, os.path.basename(s)))
+    if spec.get("source_abs"):
+        cands.append(spec["source_abs"])
+    for c in cands:
+        if c and os.path.exists(c):
+            return c
+    sys.exit("找不到原文 PDF。试过：\n  " + "\n  ".join(str(c) for c in cands)
+             + "\n用 --source 指定原文路径。")
+
+
 def cmd_apply(a):
     spec = json.load(open(a.spec, encoding="utf-8"))
-    doc = fitz.open(spec["source"])
+    doc = fitz.open(resolve_source(spec, a.spec, a.source))
+
     opt = spec.get("options", {})
     min_scale = opt.get("min_scale", 0.84)
     line_factor = opt.get("line_factor", 1.2)
@@ -469,6 +500,7 @@ def main():
     p.add_argument("spec")
     p.add_argument("-o", "--out", required=True)
     p.add_argument("--title", default="")
+    p.add_argument("--source", default="", help="原文 PDF 路径（spec 里记录失效时用）")
     p.set_defaults(func=cmd_apply)
 
     v = sub.add_parser("verify", help="自检")
