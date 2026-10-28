@@ -1,0 +1,714 @@
+{
+ "source": "C:\\Users\\czx\\WorkBuddy\\2026-10-28-22-42-58\\pdf-inplace-translate\\examples\\demo_datasheet.pdf",
+ "options": {
+  "pad": 3.5,
+  "min_scale": 0.84,
+  "line_factor": 1.2
+ },
+ "target_language": "es",
+ "pages": [
+  {
+   "page": 1,
+   "width": 595.3,
+   "height": 841.9,
+   "blocks": [
+    {
+     "id": "p1_b01",
+     "src": "ACME PX-200",
+     "lines": [
+      "ACME PX-200"
+     ],
+     "baselines": [
+      74.0
+     ],
+     "bbox": [
+      36.0,
+      46.18,
+      206.48,
+      81.98
+     ],
+     "x0": 36.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      24.0,
+      571.3
+     ],
+     "font": "arialb",
+     "size": 26.0,
+     "color": "#ffffff",
+     "maxw": 526.3,
+     "max_lines": 1,
+     "tgt": null
+    },
+    {
+     "id": "p1_b02",
+     "src": "Professional Field Controller",
+     "lines": [
+      "Professional Field Controller"
+     ],
+     "baselines": [
+      102.0
+     ],
+     "bbox": [
+      36.0,
+      88.03,
+      199.27,
+      105.89
+     ],
+     "x0": 36.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      24.0,
+      571.3
+     ],
+     "font": "arial",
+     "size": 13.0,
+     "color": "#c7d1e0",
+     "maxw": 526.3,
+     "max_lines": 1,
+     "tgt": "Controlador de campo profesional"
+    },
+    {
+     "id": "p1_b03",
+     "src": "DATASHEET  ·  REV. 2024-02",
+     "lines": [
+      "DATASHEET  ·  REV. 2024-02"
+     ],
+     "baselines": [
+      128.0
+     ],
+     "bbox": [
+      36.0,
+      119.4,
+      145.38,
+      130.39
+     ],
+     "x0": 36.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      24.0,
+      571.3
+     ],
+     "font": "arial",
+     "size": 8.0,
+     "color": "#d97021",
+     "maxw": 526.3,
+     "max_lines": 1,
+     "tgt": "FICHA TÉCNICA  ·  REV. 2024-02"
+    },
+    {
+     "id": "p1_b04",
+     "src": "HIGHLIGHTS",
+     "lines": [
+      "HIGHLIGHTS"
+     ],
+     "baselines": [
+      190.0
+     ],
+     "bbox": [
+      36.0,
+      177.16,
+      110.0,
+      193.68
+     ],
+     "x0": 36.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      24.0,
+      571.3
+     ],
+     "font": "arialb",
+     "size": 12.0,
+     "color": "#1a212b",
+     "maxw": 526.3,
+     "max_lines": 1,
+     "tgt": "DESTACADOS"
+    },
+    {
+     "id": "p1_b05",
+     "src": "Rugged housing rated for two-metre drops onto concrete.",
+     "lines": [
+      "Rugged housing rated for two-metre drops onto concrete."
+     ],
+     "baselines": [
+      216.0
+     ],
+     "bbox": [
+      52.0,
+      205.79,
+      293.31,
+      218.84
+     ],
+     "x0": 52.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      42.6,
+      571.3
+     ],
+     "font": "arial",
+     "size": 9.5,
+     "color": "#1a212b",
+     "maxw": 510.3,
+     "max_lines": 1,
+     "tgt": "Carcasa reforzada resistente a caídas de dos metros sobre hormigón."
+    },
+    {
+     "id": "p1_b06",
+     "src": "Sunlight-readable 5.5-inch display with glove-friendly touch.",
+     "lines": [
+      "Sunlight-readable 5.5-inch display with glove-friendly touch."
+     ],
+     "baselines": [
+      235.0
+     ],
+     "bbox": [
+      52.0,
+      224.79,
+      302.27,
+      237.84
+     ],
+     "x0": 52.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      42.6,
+      571.3
+     ],
+     "font": "arial",
+     "size": 9.5,
+     "color": "#1a212b",
+     "maxw": 510.3,
+     "max_lines": 1,
+     "tgt": "Pantalla de 5,5 pulgadas legible al sol y táctil con guantes."
+    },
+    {
+     "id": "p1_b07",
+     "src": "All-day battery, hot-swappable without losing the current job.",
+     "lines": [
+      "All-day battery, hot-swappable without losing the current job."
+     ],
+     "baselines": [
+      254.0
+     ],
+     "bbox": [
+      52.0,
+      243.79,
+      305.97,
+      256.84
+     ],
+     "x0": 52.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      42.6,
+      571.3
+     ],
+     "font": "arial",
+     "size": 9.5,
+     "color": "#1a212b",
+     "maxw": 510.3,
+     "max_lines": 1,
+     "tgt": "Batería para todo el día, sustituible en caliente sin perder el trabajo en curso."
+    },
+    {
+     "id": "p1_b08",
+     "src": "SPECIFICATIONS",
+     "lines": [
+      "SPECIFICATIONS"
+     ],
+     "baselines": [
+      282.0
+     ],
+     "bbox": [
+      36.0,
+      269.16,
+      136.68,
+      285.68
+     ],
+     "x0": 36.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      24.0,
+      571.3
+     ],
+     "font": "arialb",
+     "size": 12.0,
+     "color": "#1a212b",
+     "maxw": 526.3,
+     "max_lines": 1,
+     "tgt": "ESPECIFICACIONES"
+    },
+    {
+     "id": "p1_b09",
+     "src": "Product model",
+     "lines": [
+      "Product model"
+     ],
+     "baselines": [
+      317.0
+     ],
+     "bbox": [
+      46.0,
+      307.8,
+      106.21,
+      319.64
+     ],
+     "x0": 46.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      36.0,
+      204.0
+     ],
+     "font": "arialb",
+     "size": 8.6,
+     "color": "#1a212b",
+     "maxw": 149.0,
+     "max_lines": 1,
+     "tgt": "Modelo de producto"
+    },
+    {
+     "id": "p1_b10",
+     "src": "ACME PX-200",
+     "lines": [
+      "ACME PX-200"
+     ],
+     "baselines": [
+      317.0
+     ],
+     "bbox": [
+      216.0,
+      307.76,
+      271.92,
+      319.57
+     ],
+     "x0": 216.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      204.0,
+      559.3
+     ],
+     "font": "arial",
+     "size": 8.6,
+     "color": "#333d4d",
+     "maxw": 334.3,
+     "max_lines": 1,
+     "tgt": null
+    },
+    {
+     "id": "p1_b11",
+     "src": "Input configuration",
+     "lines": [
+      "Input configuration"
+     ],
+     "baselines": [
+      343.0
+     ],
+     "bbox": [
+      46.0,
+      333.8,
+      124.35,
+      345.64
+     ],
+     "x0": 46.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      36.0,
+      204.0
+     ],
+     "font": "arialb",
+     "size": 8.6,
+     "color": "#1a212b",
+     "maxw": 149.0,
+     "max_lines": 1,
+     "tgt": "Configuración de entrada"
+    },
+    {
+     "id": "p1_b12",
+     "src": "Full QWERTY keypad, separated number/letter keys",
+     "lines": [
+      "Full QWERTY keypad, separated number/letter keys"
+     ],
+     "baselines": [
+      343.0
+     ],
+     "bbox": [
+      216.0,
+      333.76,
+      416.26,
+      345.57
+     ],
+     "x0": 216.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      204.0,
+      559.3
+     ],
+     "font": "arial",
+     "size": 8.6,
+     "color": "#333d4d",
+     "maxw": 334.3,
+     "max_lines": 1,
+     "tgt": "Teclado QWERTY completo, teclas numéricas y alfabéticas separadas"
+    },
+    {
+     "id": "p1_b13",
+     "src": "Operating temperature",
+     "lines": [
+      "Operating temperature"
+     ],
+     "baselines": [
+      369.0
+     ],
+     "bbox": [
+      46.0,
+      359.8,
+      138.71,
+      371.64
+     ],
+     "x0": 46.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      36.0,
+      204.0
+     ],
+     "font": "arialb",
+     "size": 8.6,
+     "color": "#1a212b",
+     "maxw": 149.0,
+     "max_lines": 1,
+     "tgt": "Temp. de funcionamiento"
+    },
+    {
+     "id": "p1_b14",
+     "src": "-30 °C to +60 °C",
+     "lines": [
+      "-30 °C to +60 °C"
+     ],
+     "baselines": [
+      369.0
+     ],
+     "bbox": [
+      216.0,
+      359.76,
+      279.05,
+      371.57
+     ],
+     "x0": 216.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      204.0,
+      559.3
+     ],
+     "font": "arial",
+     "size": 8.6,
+     "color": "#333d4d",
+     "maxw": 334.3,
+     "max_lines": 1,
+     "tgt": "-30 °C a +60 °C"
+    },
+    {
+     "id": "p1_b15",
+     "src": "Storage temperature",
+     "lines": [
+      "Storage temperature"
+     ],
+     "baselines": [
+      395.0
+     ],
+     "bbox": [
+      46.0,
+      385.8,
+      130.11,
+      397.64
+     ],
+     "x0": 46.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      36.0,
+      204.0
+     ],
+     "font": "arialb",
+     "size": 8.6,
+     "color": "#1a212b",
+     "maxw": 149.0,
+     "max_lines": 1,
+     "tgt": "Temp. de almacenaje"
+    },
+    {
+     "id": "p1_b16",
+     "src": "-40 °C to +70 °C",
+     "lines": [
+      "-40 °C to +70 °C"
+     ],
+     "baselines": [
+      395.0
+     ],
+     "bbox": [
+      216.0,
+      385.76,
+      279.05,
+      397.57
+     ],
+     "x0": 216.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      204.0,
+      559.3
+     ],
+     "font": "arial",
+     "size": 8.6,
+     "color": "#333d4d",
+     "maxw": 334.3,
+     "max_lines": 1,
+     "tgt": "-40 °C a +70 °C"
+    },
+    {
+     "id": "p1_b17",
+     "src": "Wireless",
+     "lines": [
+      "Wireless"
+     ],
+     "baselines": [
+      421.0
+     ],
+     "bbox": [
+      46.0,
+      411.8,
+      81.37,
+      423.64
+     ],
+     "x0": 46.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      36.0,
+      204.0
+     ],
+     "font": "arialb",
+     "size": 8.6,
+     "color": "#1a212b",
+     "maxw": 149.0,
+     "max_lines": 1,
+     "tgt": "Conectividad inalámbrica"
+    },
+    {
+     "id": "p1_b18",
+     "src": "Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.0",
+     "lines": [
+      "Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.0"
+     ],
+     "baselines": [
+      421.0
+     ],
+     "bbox": [
+      216.0,
+      411.76,
+      360.37,
+      423.57
+     ],
+     "x0": 216.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      204.0,
+      559.3
+     ],
+     "font": "arial",
+     "size": 8.6,
+     "color": "#333d4d",
+     "maxw": 334.3,
+     "max_lines": 1,
+     "tgt": null
+    },
+    {
+     "id": "p1_b19",
+     "src": "Ingress protection",
+     "lines": [
+      "Ingress protection"
+     ],
+     "baselines": [
+      447.0
+     ],
+     "bbox": [
+      46.0,
+      437.8,
+      121.03,
+      449.64
+     ],
+     "x0": 46.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      36.0,
+      204.0
+     ],
+     "font": "arialb",
+     "size": 8.6,
+     "color": "#1a212b",
+     "maxw": 149.0,
+     "max_lines": 1,
+     "tgt": "Grado de protección"
+    },
+    {
+     "id": "p1_b20",
+     "src": "IP68, MIL-STD-810H",
+     "lines": [
+      "IP68, MIL-STD-810H"
+     ],
+     "baselines": [
+      447.0
+     ],
+     "bbox": [
+      216.0,
+      437.76,
+      296.29,
+      449.57
+     ],
+     "x0": 216.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      204.0,
+      559.3
+     ],
+     "font": "arial",
+     "size": 8.6,
+     "color": "#333d4d",
+     "maxw": 334.3,
+     "max_lines": 1,
+     "tgt": null
+    },
+    {
+     "id": "p1_b21",
+     "src": "Dimensions",
+     "lines": [
+      "Dimensions"
+     ],
+     "baselines": [
+      473.0
+     ],
+     "bbox": [
+      46.0,
+      463.8,
+      94.74,
+      475.64
+     ],
+     "x0": 46.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      36.0,
+      204.0
+     ],
+     "font": "arialb",
+     "size": 8.6,
+     "color": "#1a212b",
+     "maxw": 149.0,
+     "max_lines": 1,
+     "tgt": "Dimensiones"
+    },
+    {
+     "id": "p1_b22",
+     "src": "221 × 78 × 16.5 mm, 380 g",
+     "lines": [
+      "221 × 78 × 16.5 mm, 380 g"
+     ],
+     "baselines": [
+      473.0
+     ],
+     "bbox": [
+      216.0,
+      463.76,
+      319.27,
+      475.57
+     ],
+     "x0": 216.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      204.0,
+      559.3
+     ],
+     "font": "arial",
+     "size": 8.6,
+     "color": "#333d4d",
+     "maxw": 334.3,
+     "max_lines": 1,
+     "tgt": "221 × 78 × 16,5 mm, 380 g"
+    },
+    {
+     "id": "p1_b23",
+     "src": "Specifications are subject to change without notice.",
+     "lines": [
+      "Specifications are subject to change without notice."
+     ],
+     "baselines": [
+      793.9
+     ],
+     "bbox": [
+      36.0,
+      785.84,
+      206.08,
+      796.14
+     ],
+     "x0": 36.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      24.0,
+      571.3
+     ],
+     "font": "arial",
+     "size": 7.5,
+     "color": "#6b7585",
+     "maxw": 526.3,
+     "max_lines": 1,
+     "tgt": "Especificaciones sujetas a cambios sin previo aviso."
+    },
+    {
+     "id": "p1_b24",
+     "src": "ACME Instruments · example.com · +00 000 0000",
+     "lines": [
+      "ACME Instruments · example.com · +00 000 0000"
+     ],
+     "baselines": [
+      806.9
+     ],
+     "bbox": [
+      36.0,
+      798.84,
+      202.12,
+      809.14
+     ],
+     "x0": 36.0,
+     "align": "left",
+     "cx": null,
+     "cell": [
+      24.0,
+      571.3
+     ],
+     "font": "arial",
+     "size": 7.5,
+     "color": "#6b7585",
+     "maxw": 526.3,
+     "max_lines": 1,
+     "tgt": null
+    }
+   ]
+  }
+ ]
+}

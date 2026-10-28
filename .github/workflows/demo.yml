@@ -1,0 +1,52 @@
+name: demo
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  roundtrip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          # 自由字体，保证 Linux 上也能回填
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-dejavu-core fonts-liberation
+
+      - name: Generate sample document
+        run: python examples/make_demo.py /tmp/demo.pdf
+
+      - name: Extract
+        run: python scripts/pdf_translate.py extract /tmp/demo.pdf -o /tmp/spec.json --lang es
+
+      - name: Apply shipped Spanish spec
+        run: |
+          python scripts/pdf_translate.py apply examples/demo.spec.json \
+            -o /tmp/out.pdf --title "demo-es"
+
+      - name: Verify (fails the build on overflow or leftover source)
+        run: |
+          python scripts/pdf_translate.py verify /tmp/demo.pdf /tmp/out.pdf \
+            --spec examples/demo.spec.json
+
+      - name: Render
+        run: |
+          python scripts/pdf_translate.py render /tmp/out.pdf -d /tmp/png --dpi 120
+          ls -l /tmp/png
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: demo-output
+          path: /tmp/png
